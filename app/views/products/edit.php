@@ -10,7 +10,7 @@ include_once 'app/views/share/header.php'
             ?>
     </h1>
 
-<form action="/chieu5/product/update" method="post" enctype="multipart/form-data">
+<form action="/mvc/product/update" method="post" enctype="multipart/form-data">
 
   <input type="hidden" name="id"  value="<?=$product->id?>">
 
@@ -30,7 +30,7 @@ include_once 'app/views/share/header.php'
 
   <div class="form-group">
     <label for="thumbnail">Thumnail</label>
-    <img src="/chieu5/<?=$product->thumnail?>" />
+    <img src="/mvc/<?=$product->thumnail?>" />
     <br>
     <input type="file" class="form-control" id="thumbnail" name="thumbnail">
   </div>
